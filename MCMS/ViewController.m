@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "MagicalCreature.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -16,10 +19,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    MagicalCreature *creature = [[MagicalCreature alloc] initWithFullName:@"ToothFairy"];
 
+    self.creatures = [NSMutableArray arrayWithObjects:creature, nil];
 
+    for (MagicalCreature *creature in self.creatures) {
+        NSLog(@"Creature: %@", creature.name);
+    }
 }
 
 
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+    {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CreatureCell"];
+        cell.textLabel.text = [[self.creatures objectAtIndex:indexPath.row] name];
+
+        return cell;
+    }
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.creatures.count;
+}
 
 @end

@@ -12,4 +12,6 @@
 
 @property NSString *name;
 
+-(instancetype)initWithFullName:(NSString *)name;
+
 @end
