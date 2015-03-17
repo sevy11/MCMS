@@ -48,7 +48,8 @@
 // add new creature's name to array
 - (IBAction)addButtonOnPressed:(UIButton *)sender {
     if ([self.creatureTextField.text length] > 0) {
-        [self.creatureArray addObject:self.creatureTextField.text];
+        MagicalCreature *creature = [[MagicalCreature alloc] initWithFullName:self.creatureTextField.text];
+        [self.creatureArray addObject:creature];
         [self.tableView reloadData];
         self.creatureTextField.text = nil;
         [self.creatureTextField resignFirstResponder];
