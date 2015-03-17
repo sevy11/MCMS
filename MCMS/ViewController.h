@@ -10,7 +10,7 @@
 
 @interface ViewController : UIViewController
 
-@property NSMutableArray *creatures;
+@property NSMutableArray *creatureArray;
 
 @end
 

@@ -86,10 +86,10 @@
 			children = (
 				26D7C7B51AB8AE0200A74F08 /* AppDelegate.h */,
 				26D7C7B61AB8AE0200A74F08 /* AppDelegate.m */,
-				26D7C7D71AB8AE4200A74F08 /* MagicalCreature.h */,
-				26D7C7D81AB8AE4200A74F08 /* MagicalCreature.m */,
 				26D7C7B81AB8AE0200A74F08 /* ViewController.h */,
 				26D7C7B91AB8AE0200A74F08 /* ViewController.m */,
+				26D7C7D71AB8AE4200A74F08 /* MagicalCreature.h */,
+				26D7C7D81AB8AE4200A74F08 /* MagicalCreature.m */,
 				26D7C7BB1AB8AE0200A74F08 /* Main.storyboard */,
 				26D7C7BE1AB8AE0200A74F08 /* Images.xcassets */,
 				26D7C7C01AB8AE0200A74F08 /* LaunchScreen.xib */,
@@ -418,6 +418,7 @@
 				26D7C7D31AB8AE0200A74F08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26D7C7D41AB8AE0200A74F08 /* Build configuration list for PBXNativeTarget "MCMSTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +427,7 @@
 				26D7C7D61AB8AE0200A74F08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
